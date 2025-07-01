@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   /* background-color: #000; */
   background-color: #1f1f1f;
-  color: #fff;
+  color: #929f8c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ body {
   padding: 1.5rem 2rem 1rem 1.5rem;
   font-size: 0.9rem;
   /* height: 80px; */
-  background: #202124;
+  background: #1f1f1f;
 }
 
 .nav-left, .nav-right {
@@ -40,7 +40,7 @@ body {
   font-size: 1.5rem;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #929f8c;
   cursor: pointer;
 }
 
@@ -62,11 +62,10 @@ li>.profile {
 } */
 
 .nav-bar a {
-  color: #fff;
-  /* color: #4285F4; */
+  color: #929f8c;  
   text-decoration: none;
   font-size: 0.9rem;
-  /* height: 80%; */
+  padding: 1rem 0.5rem;
 }
 /* .nav-bar a:visited {
   color: #ccc;
@@ -227,8 +226,10 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100vw;
-  height: 25vh;
+  /* height: 25vh; */
+  height: auto;
   position: relative;
   z-index: 10;
   padding: 1rem;
@@ -243,17 +244,20 @@ footer {
   padding: 1rem;
   border-bottom: 1px solid #333;
 }
-footer
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: space-evenly;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .footer-bottom ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
   padding: 0;
@@ -262,6 +266,8 @@ footer
 .footer-bottom a {
   color: #ccc;
   text-decoration: none;
+  color: #929f8c;
+  font-weight: 600;
 }
 
 /* TABLETTE */
