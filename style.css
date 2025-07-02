@@ -63,19 +63,10 @@ body {
 li>.profile {
   background: #00897b;
   border: none;
-  border-radius: 50%;
-  /* padding: 0.9rem; */
-  padding: 0.4rem;
-  margin-left: 2rem;
+  border-radius: 50%; 
+  padding: 0.4rem;  
   color: #fff;
   cursor: pointer;
-}
-
-.profile> p {
-  margin: 0;
-  font-size: 0.9rem;
-  text-align: center;
-  line-height: 1.2rem;
 }
 
 .nav-bar a {
@@ -148,19 +139,16 @@ main {
 
 span.icon svg {
   width: 24px;
-  height: 24px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; */
+  height: 24px; 
 }
 
-/* span.icon {
+span.icon {
     display: flex;
-  } */
-  /* ===============================
-   SVG : Comportement par défaut (mobile)
-   =============================== */
+  }
+
+  /* ==================================
+   SVG : Comportement par défaut mobile
+   ================================= */
 
 /* Petites icônes visibles en mobile */
 svg.mic24,
@@ -288,9 +276,10 @@ footer {
   width: 100%;
   padding: 0.5rem;
 }
-  /* ul.foot-climat {
+  .footer-bottom > .foot-climat {
+    /* display: flex; */
     display: none;
-   } */
+   }
 
 .footer-center {
   display: flex;
@@ -338,8 +327,11 @@ footer {
 /* ==================================================== */
 /* TABLETTE */
 @media (min-width: 768px) and (orientation: landscape) {
-   ul.foot-climat {
+  .footer-bottom > .foot-climat {
     display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
    }
   .nav-bar {
     font-size: 1rem;
@@ -357,6 +349,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 /* ==================================================== */
 /* ==================================================== */
 /* ==================================================== */
@@ -417,16 +410,30 @@ footer {
   footer {
     font-size: 0.9rem;
   }
-  .foot-climat{
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
+   .footer-bottom > .foot-climat {
+    display: flex;
+    /* display: none; */
+   }
+ 
   ul.foot-climat {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* gap: 0.5rem; */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  .footer-center {
+    margin-top: 1rem;
+    display: inline-flex;
+    width: 73%;
+  }
+  .footer-right {
+    margin-top: 1rem;
+    display: inline-flex;
+    width: 27%;
+    order:2;
   }
 }
